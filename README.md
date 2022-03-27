@@ -2,8 +2,7 @@ Bước 1 : Cài đặt Linux trên máy ảo
 
 Bước 2 : Tải và giải nén file nachos.rar
 
-Bước 3 : Vào thư mục ./projecthdh
-/cross-compiler/decstation-ultrix/bin/. Thiết lập thuộc tính excutable ở mọi người dùng đối với tất cả các file có trong thư mục (as, cc1, cpp0, gcc, ld).
+Bước 3 : Vào thư mục projecthdh/gnu-decstation-ultrix/decstation-ultrix/2.95.3/  Thiết lập thuộc tính excutable ở mọi người dùng đối với tất cả các file có trong thư mục (as, cc1, cpp0, gcc, ld).
 
 Bước 4 : Sửa dòng “MAKE = gmake” thành MAKE = make và lưu lại.
 
