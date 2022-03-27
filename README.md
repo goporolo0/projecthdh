@@ -11,4 +11,4 @@ Bước 5 : Mở Terminal. Gõ lệnh cd ~/projecthdh
 
 Bước 6 : Tiếp tục gõ make để tiến hành cài đặt NachOS 
 
-Bước 7 : Chạy thử chương trình trên NachOS bằng lệnh : ./userprog/nachos –rs 1023 –x ./test/halt rồi Enter
+Bước 7 : Chạy thử chương trình trên NachOS bằng lệnh  ./userprog/nachos –rs 1023 –x ./test/halt rồi Enter
