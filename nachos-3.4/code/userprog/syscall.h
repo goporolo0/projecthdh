@@ -41,8 +41,12 @@
 #define SC_PrintString	16
 
 #define SC_Seek		17
-#define SC_Delete	18
+#define SC_Delete	171
 
+// Syscall Semaphore
+#define SC_CreateSemaphore	18
+#define SC_Wait			19
+#define SC_Signal		20
 
 #ifndef IN_ASM
 

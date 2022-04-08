@@ -32,14 +32,19 @@
 //	"threadName" is an arbitrary string, useful for debugging.
 //----------------------------------------------------------------------
 
-Thread::Thread(char *threadName)
+Thread::Thread(char* debugName)
 {
-    name = threadName;
+    name = debugName;
     stackTop = NULL;
     stack = NULL;
     status = JUST_CREATED;
+    
+    processID = 0;//
+    exitStatus = 0;//
+
 #ifdef USER_PROGRAM
     space = NULL;
+	
 #endif
 }
 
