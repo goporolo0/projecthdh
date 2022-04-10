@@ -1,20 +1,29 @@
-PROJECT 1:
+**PROJECT 1:**
+
 Bước 1 : Cài đặt Linux trên máy ảo
 
-Bước 2 : Tải và giải nén file projecthdh.rar
+Bước 2 : Tải và giải nén file _projecthdh.rar_
 
-Bước 3 : Vào thư mục projecthdh/gnu-decstation-ultrix/decstation-ultrix/2.95.3/  Thiết lập thuộc tính excutable ở mọi người dùng đối với tất cả các file có trong thư mục (as, cc1, cpp0, gcc, ld).
+Bước 3 : Vào thư mục _projecthdh/gnu-decstation-ultrix/decstation-ultrix/2.95.3/_  Thiết lập thuộc tính excutable ở mọi người dùng đối với tất cả các file có trong thư mục (as, cc1, cpp0, gcc, ld).
 
-Bước 4 : Sửa dòng “MAKE = gmake” thành MAKE = make và lưu lại.
+Bước 4 : Sửa dòng _“MAKE = gmake”_ thành _"MAKE = make"_ và lưu lại.
 
-Bước 5 : Mở Terminal. Gõ lệnh cd ~/projecthdh
-/nachos-3.4/code rồi Enter.
+Bước 5 : cd vào _/code_ 
 
 Bước 6 : Tiếp tục gõ make để tiến hành cài đặt NachOS 
 
-Bước 7 : Chạy thử chương trình trên NachOS bằng lệnh  ./userprog/nachos –rs 1023 –x ./test/halt rồi Enter
+Bước 7 : Chạy thử chương trình trên NachOS bằng lệnh  _./userprog/nachos –rs 1023 –x ./test/halt_ 
 
-PROJECT 2:
-Bước 7 : Chạy thử chương trình trên NachOS bằng lệnh  ./userprog/nachos –rs 1023 –x ./test/scheduler rồi Enter
+**PROJECT 2:**
 
-PROJECT 3:
+Bước 1 : Làm tương tự PROJECT 1 rồi chạy thử chương trình trên NachOS bằng lệnh  _./userprog/nachos –rs 1023 –x ./test/scheduler_ 
+
+**PROJECT 3:**
+
+Bước 1 : cd vào _/project3_
+
+Bước 2 : Tiếp tục gõ _make_ để tiến hành tạo file module.ko từ file module.c
+
+Bước 3 : Tiếp tục gõ _sudo insmod mymodule.ko_ để thêm module vào kernel (_sudo rmmod mymodule.ko_ để gỡ module)
+
+Bước 4 : Tiếp tục gõ _sudo cat /dev/chardev0_ để in số ngẫu nhiên ra terminal
