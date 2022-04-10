@@ -24,6 +24,6 @@ Bước 1 : cd vào _/project3_
 
 Bước 2 : Tiếp tục gõ _make_ để tiến hành tạo file module.ko từ file module.c
 
-Bước 3 : Tiếp tục gõ _sudo insmod mymodule.ko_ để thêm module vào kernel
+Bước 3 : Tiếp tục gõ _sudo insmod mymodule.ko_ để thêm module vào kernel (_sudo rmmod mymodule.ko_ để gỡ module)
 
 Bước 4 : Tiếp tục gõ _sudo cat /dev/chardev0_ để in số ngẫu nhiên ra terminal
