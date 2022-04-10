@@ -1,6 +1,9 @@
-#include <linux/module.h>           //  thu vien nay dinh nghia cac macro nhu module_init va module_exit
+#include <linux/module.h>     /* Needed by all modules */
+#include <linux/kernel.h>     /* Needed for KERN_INFO */
+#include <linux/init.h>       /* Needed for the macros */
+
 #include <linux/version.h> 
-#include <linux/kernel.h> 
+
 #include <linux/types.h> 
 #include <linux/kdev_t.h>
 #include <linux/fs.h>
@@ -61,7 +64,7 @@ static ssize_t myRead(struct file *file, char __user *buf, size_t len, loff_t *o
     
     int randNum = randomFunc();
     
-    sprintf(data, "%d", randNum);
+    sprintf(data, "%d \n", randNum);
 
     if (copy_to_user(buf, &data, bytes)) {
         return -EFAULT;
@@ -75,8 +78,8 @@ static ssize_t myRead(struct file *file, char __user *buf, size_t len, loff_t *o
 // Ham khoi tao device 
 static int __init init_func(void) {
     int i;
+    dev_t myDeviceType;  
 
-    dev_t myDeviceType; 
     if(alloc_chrdev_region(&myDeviceType, 0, MAX_DEV, "chardev")<0)
         return -1;
     
@@ -108,8 +111,7 @@ static int __init init_func(void) {
         }
     }
     
-    printk("My Character Device >> Initialized!!!\n");
-
+    printk("Initializing...\n");
     return 0;
 }
 
@@ -127,12 +129,12 @@ static void __exit exit_func(void) {
     
     unregister_chrdev_region(MKDEV(myMajor, 0), MINORMASK);
     
-    printk("My Character Device >> Removed!!!");
+    printk("Removing...");
 }
 
 // Thong tin module
 MODULE_LICENSE("GPL"); 
-MODULE_AUTHOR("Hien_Vien_Han");
+MODULE_AUTHOR("goporo");
 MODULE_DESCRIPTION("Module tao so ngau nhien");         // mo ta chuc nang cua module 
 MODULE_SUPPORTED_DEVICE("character device");            // kieu device ma module ho tro 
 

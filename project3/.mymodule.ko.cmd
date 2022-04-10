@@ -1,0 +1,1 @@
+cmd_/home/goporo/Desktop/projecthdh/project3/mymodule.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/goporo/Desktop/projecthdh/project3/mymodule.ko /home/goporo/Desktop/projecthdh/project3/mymodule.o /home/goporo/Desktop/projecthdh/project3/mymodule.mod.o
