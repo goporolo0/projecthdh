@@ -12,7 +12,7 @@
 #include <linux/uaccess.h> 
 #include <linux/random.h> 
 
-#define MAX_DEV 1   // So luong toi da device loai nay
+#define MAX_DEV 1   
 
 #define MAX_LEN 256     // Do lon buffer
 
