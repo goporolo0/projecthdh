@@ -136,8 +136,8 @@ static void __exit exit_func(void)
 
 MODULE_LICENSE("GPL"); 
 MODULE_AUTHOR("goporo");
-MODULE_DESCRIPTION("Module tao so ngau nhien");         
-MODULE_SUPPORTED_DEVICE("character device");            
+MODULE_DESCRIPTION("Module dung detao so ngau nhien");         
+MODULE_SUPPORTED_DEVICE("Character device");            
 
 
 module_init(init_func);
