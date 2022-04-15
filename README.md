@@ -12,11 +12,13 @@ Bước 5 : cd vào _/code_
 
 Bước 6 : Tiếp tục gõ make để tiến hành cài đặt NachOS 
 
-Bước 7 : Chạy thử chương trình trên NachOS bằng lệnh  _./userprog/nachos –rs 1023 –x ./test/halt_ 
+Bước 7 : cd vào ./test và gõ make để compile file .c
+
+Bước 8 : Chạy thử chương trình trên NachOS bằng lệnh  _../userprog/nachos -rs 1023 -x ./halt_ 
 
 **PROJECT 2:**
 
-Bước 1 : Làm tương tự PROJECT 1 rồi chạy thử chương trình trên NachOS bằng lệnh  _./userprog/nachos –rs 1023 –x ./test/scheduler_ 
+Bước 1 : Làm tương tự PROJECT 1 rồi chạy thử chương trình trên NachOS bằng lệnh  _../userprog/nachos -rs 1023 -x ./scheduler_ 
 
 **PROJECT 3:**
 
