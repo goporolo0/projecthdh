@@ -59,7 +59,7 @@ SynchConsole::~SynchConsole()
 	delete synchReadAvail;
 	delete synchWriteAvail;
 	delete RLineBlock;
-	delete WLineBlock;
+	delete WLineBlock ;
 }
 
 //----------------------------------------------------------------------
